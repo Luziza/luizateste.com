@@ -19,6 +19,11 @@ $total = mysqli_num_rows($dados);
 ?>
 
 <html>
+    <style type="text/css">
+
+        body{
+            background-color: 8029D7;
+        }
 	<head>
 	<title>Exemplo</title>
 </head>
@@ -29,7 +34,9 @@ $total = mysqli_num_rows($dados);
 		// inicia o loop que vai mostrar todos os dados
 		do {
 ?>
-			<p><?=$linha['order_id']?> / <?=$linha['order_total']?> / <?=$linha['order_date']?></p>
+        <table">
+			<p><?=$linha['order_id']?> | <?=$linha['order_total']?> | <?=$linha['order_date']?></p>
+        </table>
 <?php
 		// finaliza o loop que vai mostrar os dados
 		}while($linha = mysqli_fetch_assoc($dados));
