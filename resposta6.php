@@ -24,6 +24,7 @@ $total = mysqli_num_rows($dados);
         body{
             background-color: 8029D7;
         }
+	</style>
 	<head>
 	<title>Exemplo</title>
 </head>
